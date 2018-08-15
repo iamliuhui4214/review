@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+		}
+		.top{
+			background-color: #ccc;
+			/* 绝对定位 */
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+		}
+		.bot{
+			background-color: red;
+		}
+		.father{
+			width: 800px;
+			height: 500px;
+			background-color: orange;
+			position: absolute;
+		}
+		.son{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+		span{
+			background-color: yellow;
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="top"></div>
+	<div class="bot"></div>
+	<span>么么哒</span>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

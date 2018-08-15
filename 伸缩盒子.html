@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			height: 400px;
+			width: 1000px;
+			margin: 0 auto;
+			background-color: #ccc;
+			list-style: none;
+			/* 将父元素设置为伸缩盒子 */
+			display: flex;
+			/* 调整主轴对齐方式 */
+			/* 默认值 */
+			/* justify-content: flex-start; */
+			/* 从主轴结束位置对齐 */
+			/* justify-content: flex-end; */
+			/* 两端对齐，中间等距分布 */
+			/* justify-content: space-between; */
+			/* 两端距离是中间等距分布的一半 */
+			/* justify-content: space-around; */
+			
+
+			/* 调整侧轴的对齐方式 */
+
+			align-items: flex-end;
+			align-items: center;
+			align-items: stretch;
+
+		}
+
+		li{
+			/* height: 200px; */
+			height: auto;
+			width: 200px;
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+</body>
+</html>

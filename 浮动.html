@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.wrapper {
+			width: 1000px;
+			margin: 0 auto;
+			background: #ccc;
+		}
+		.header {
+			height: 100px;
+			background-color: pink;
+		}
+		.main {
+			/* height: 400px; */
+			/* overflow: hidden; */
+			background-color: orange;
+			margin: 10px 0;
+		}
+		.footer {
+			height: 100px;
+			background-color: green;
+		}
+		.left {
+			margin-top: -30px;
+			width: 300px;
+			height: 400px;
+			background-color: red;
+			float: left;
+		}
+		.right {
+			width: 690px;
+			height: 400px;
+			background-color: blue;
+			float: right;
+		}
+		
+		/* 双伪元素清除浮动 */
+		.clearfix:before,.clearfix:after{
+			content: '';
+			/* 转为快元素显示模式 */
+			display: table;
+		}
+		.clearfix:after{
+			clear: both;
+		}
+
+		/* 单伪元素清除浮动 */
+		/* .clearfix:after{
+			content: '123123';
+			display: block;
+			height: 0;
+			line-height: 0;
+			/* visibility: hidden; */
+			/* clear: both; */
+		/* } */ */
+		/* 兼容IE浏览器清除浮动 */
+		/* .clearfix{
+			zoom: 1;
+		} */
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header"></div>
+		<div class="main clearfix">
+			<div class="left"></div>
+			<div class="right"></div>
+			<!-- <div style="clear:both"></div> -->
+		</div>
+		<div class="footer"></div>
+	</div>
+</body>
+</html>

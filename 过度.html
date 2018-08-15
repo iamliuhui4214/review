@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.father{
+			height: 200px;
+			background-color: #ccc;
+			position: relative;
+		}
+		.son{
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			/* 过渡 */
+			/* transition: all 1s; */
+			/* 过渡属性 */
+			/* transition-property: all; */
+			/* 过渡时间 */
+			/* transition-duration:  1s; */
+			/* 过渡速度 */
+			/* transition-timing-function: ease-in; */
+			/* 延迟时间 */
+			/* transition-delay: 3s; */
+			/* 过渡连写 */
+			transition: all 1s ease-in 2s;
+			left: 0;
+			top: 0;
+		}
+		.father:hover .son{
+			background-color: orange;
+            width: 500px;
+            height: 500px;
+            left: 500px;
+            top: 500px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<div class="son"></div>
+	</div>
+</body>
+</html>

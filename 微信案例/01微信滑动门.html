@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		li{
+			list-style: none;
+		}
+		
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+
+		body{
+			background: url('weixin_bg1d20af.jpg') repeat-x;
+		}
+
+		ul{
+			width: 1000px;
+			margin: 0 auto;
+			background-color: #ccc;
+		}
+
+		li{
+			float: left;
+			margin-right: 20px;
+		}
+
+		/* a标签控制左边的圆角 */
+		a {
+			display: inline-block;
+			height: 33px;
+			line-height: 33px;
+			background: url('bg.png')0 -144px;
+			padding-left: 17px;
+		}
+		/* span控制另一边的圆角 */
+		span{
+			display: inline-block;
+			height: 33px;
+            background: url('bg.png') right -144px;
+            padding-right: 17px;
+		}
+		a:hover{
+			background: url('bg.png') 0 -192px;
+		}
+		a:hover span{
+			background: url('bg.png') right -192px;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#"><span>首页</span></a></li>
+		<li><a href="#"><span>乌拉拉乌拉拉乌拉拉乌拉拉</span></a></li>
+		<li><a href="#"><span>淘汰尽狗也</span></a></li>
+
+	</ul>
+</body>
+</html>

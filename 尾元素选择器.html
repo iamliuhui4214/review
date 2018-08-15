@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#box{
+			width: 400px;
+		}
+		/* 首行尾元素选择器 */
+		/* #box::first-line{
+			color: red;
+		} */
+		/* 首字尾元素选择器 */
+		/* #box:first-letter{
+			color: red;
+			font-size: 30px;
+		} */
+		/* 前尾元素选择器 */
+		/* #box::before{
+			content: "hello";
+			font-size: 40px;
+			color: red;
+		} */
+		/* 后尾元素选择器 */
+		#box::after{
+			content: "word";
+		}
+		#box::selection{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后年后</div>
+</body>
+</html>

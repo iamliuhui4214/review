@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="1.php" method="post">
+		用户名:<input type="text" name="user" value="默认值" placeholder="期望用户输入的值" maxlength="6" required>
+		<br>
+		密码:<input type="password">
+		<br>
+		单选框 <input type="radio" name="a">
+		单选框 <input type="radio" name="a" checked="checked">
+		<br>
+		复选框 <input type="checkbox" checked="checked
+		">
+		<br>
+		<!-- 下拉列表 -->
+		国家: <select>
+				<option value="">中国</option>
+				<option value="">棒子</option>
+				<option value="" selected="selected">小日本</option>
+		      </select>	
+			<br>
+			<!-- 下拉多选 -->
+		人: <select multiple="multiple"> 
+				<option value="">张三</option>
+				<option value="">李四</option>
+				<option value="">王五</option>
+				<option value="">赵六</option>
+		      </select>	
+		      <br>
+		  <!-- 下拉分组 -->
+		  <select name="" id="">
+		  	<optgroup label="北京"> 
+		  		<option value="">朝阳</option>
+		  		<option value="">通州</option>
+		  		<option value="">海淀</option>
+		  		<option value="">顺义</option>
+		  	</optgroup>
+		  	<optgroup label="沈阳"> 
+		  		<option value="">逾越</option>
+		  		<option value="">和平</option>
+		  		<option value="">沈河</option>
+		  	</optgroup>
+		  </select>
+		  <br>
+		  <!-- 带下拉列表的输入框 -->
+		  西黄的类型: <input type="text" list="love">
+		  		<datalist id="love">
+		  			<option>阳光</option>
+		  			<option>帅气</option>
+		  			<option>智障</option>
+		  		</datalist>
+
+		  	<br>
+		  	<!-- 文本域 多行文本输入框 -->
+		  	简介: <textarea name="" id="" cols="10" rows="2"></textarea>
+
+			<br>
+			<!-- 文件上传控件 -->
+			<input type="file" multiple="multiple">
+			<br>
+
+			<!-- 文件上传控件 -->
+			隐藏域: <input type="hidden">
+
+			<br>
+			<!-- 单击文字后应文本框获取光标焦点 -->
+			<label for="ipt">密码</label> <input type="password" id="ipt" name="pwd" maxlength="6">
+			<br>
+
+			<!-- 邮件控件 -->
+			邮箱:<input type="email">
+			<br>
+			<!-- 网址控件 -->
+			网址： <input type="url">
+
+			<br>
+			<!-- 搜索控件 -->
+			搜索： <input type="search">
+			<br>
+			<!-- 数字控件 -->
+			数字 <input type="number" min="5" max="30"
+			step="3">
+
+			<br>
+			月控件: <input type="month">
+
+			<br>
+			周控件: <input type="week">
+			<br>
+			日控件：<input type="date">
+			<br>
+			时分控件: <input type="time">
+			<br>
+			<!-- 提交按钮 -->
+			<input type="submit" value="提交">
+			<br>
+			<!-- 普通按钮 -->
+			<input type="button" value="不能提交">
+			<br>
+			<!-- button按钮 -->
+			<button>button按钮</button>
+			<br>
+			<!-- 图片按钮 -->
+			<input type="image" src="1.jpg" title="图片">
+	</form>
+	<!-- action  搜集信息提交给谁处理 -->
+	<!-- method   get，post 传输数据方式  -->
+</body>
+</html>
